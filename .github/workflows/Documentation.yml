@@ -16,7 +16,7 @@ jobs:
       - uses: julia-actions/setup-julia@latest
       - uses: julia-actions/add-julia-registry@v1
         with:
-          key: ${{ secrets.SSH_KEY }}
+          #key: ${{ secrets.SSH_KEY }}
           registry: control-toolbox/ct-registry
       - uses: julia-actions/julia-buildpkg@v1
         with:
