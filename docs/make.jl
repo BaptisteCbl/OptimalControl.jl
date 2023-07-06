@@ -17,6 +17,6 @@ makedocs(
 
 deploydocs(
     #repo = "github.com/control-toolbox/OptimalControl.jl.git",
-    repo = "github.com/BaptisteCbl/OptimalControl.jl"#,
-    # devbranch = "main"
+    repo = "github.com/BaptisteCbl/OptimalControl.jl",
+    devbranch = "main"
 )
