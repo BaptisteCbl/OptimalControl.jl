@@ -18,7 +18,8 @@ docs = [
                 name = "CTFlows",
                 giturl = "https://github.com/control-toolbox/CTFlows.jl.git",
             ),
-        ],
+        ]),
+    MultiDocumenter.DropdownNav(
         "Solvers",
         [
             MultiDocumenter.MultiDocRef(
@@ -33,7 +34,8 @@ docs = [
                 name = "CTDirectShooting",
                 giturl = "https://github.com/control-toolbox/CTDirectShooting.jl.git",
             ),
-        ],
+        ]),
+    MultiDocumenter.DropdownNav(
         "Examples",
         [
             MultiDocumenter.MultiDocRef(
