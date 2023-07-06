@@ -89,7 +89,7 @@ for group in docsmodules
                                             giturl = url,
                                             branch = "gh-pages"))
     end
-    push!(docs, MultiDocumenter.MegaDropdownNav(group[1], docgroups))
+    push!(docs, MultiDocumenter.Column(group[1], docgroups))
 end
 
 outpath = joinpath(@__DIR__, "build")
