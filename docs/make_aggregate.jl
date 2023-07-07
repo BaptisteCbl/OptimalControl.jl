@@ -3,6 +3,10 @@ using MultiDocumenter
 clonedir = mktempdir()
 
 docs = [
+    MultiDocumenter.MultiDocRef(upstream = joinpath(clonedir, "Home"),
+                                       path = "Overview",
+                                       name = "Home",
+                                       giturl = "https://github.com/BaptisteCbl/OptimalControl.jl.git"),
     MultiDocumenter.DropdownNav(
         "Base and Utilities",
         [
@@ -54,6 +58,9 @@ MultiDocumenter.make(
     outpath,
     docs;
     rootpath = "/OptimalControl.jl/",
+    brand_image = MultiDocumenter.BrandImage("https://control-toolbox.org/",joinpath("assets","ct-crop.svg")),
+    assets = ["assets/ct-crop.ico"],
+    canonical = "https://baptistecbl.github.io/OptimalControl.jl/stable"
 )
 
 gitroot = normpath(joinpath(@__DIR__, ".."))
