@@ -59,8 +59,6 @@ MultiDocumenter.make(
     docs;
     rootpath = "/OptimalControl.jl/",
     brand_image = MultiDocumenter.BrandImage("https://control-toolbox.org/",joinpath("assets","ct-crop.svg")),
-    assets = ["assets/ct-crop.ico"],
-    canonical = "https://baptistecbl.github.io/OptimalControl.jl/stable"
 )
 
 gitroot = normpath(joinpath(@__DIR__, ".."))
